@@ -2,7 +2,9 @@ body {
     background-color: rgb(5, 5, 5);
 }
 
-
+.sesion{
+    font-size: 30px;
+}
 
 .hidden{      
     display: none;
