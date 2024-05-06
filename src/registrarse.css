@@ -1,0 +1,11 @@
+.informacion {
+    display: flex;
+    flex-direction: column ;
+    width: 500px;
+    background-color: aqua;
+}
+
+.listo {
+    background-color: blue;
+    color: beige;
+}
