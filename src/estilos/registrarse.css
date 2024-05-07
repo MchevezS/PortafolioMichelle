@@ -1,11 +1,37 @@
+
+
+.acceder{
+    font-size: 70px;
+
+}
+.usuarioR{
+    height: 45px;
+    background-color: blueviolet;
+}
+.apellidos {
+    height: 45px;
+}
+.edad {
+    height: 45px;
+}
+.telefono { 
+    height: 45px;
+}
+.correoelectronico {
+    height: 45px;
+}
+.contraseñaR {
+    height: 45px;
+}
 .informacion {
     display: flex;
     flex-direction: column ;
-    width: 600px;
-    background-color: aqua;
+    width:700px;
 }
 
 .listo {
+    height: 35px;
     background-color: blue;
     color: beige;
+    cursor: pointer;
 }
