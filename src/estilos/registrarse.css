@@ -1,4 +1,6 @@
-
+body{
+    border-radius: 800px;
+}
 
 .acceder{
     font-size: 70px;
@@ -6,22 +8,27 @@
 }
 .usuarioR{
     height: 45px;
-    background-color: blueviolet;
+    background-color: rgb(200, 178, 220);
 }
 .apellidos {
     height: 45px;
+    background-color: rgb(200, 178, 220);
 }
 .edad {
     height: 45px;
+    background-color: rgb(200, 178, 220);
 }
 .telefono { 
     height: 45px;
+    background-color: rgb(200, 178, 220);
 }
 .correoelectronico {
     height: 45px;
+    background-color: rgb(200, 178, 220);
 }
-.contraseñaR {
+.contraseniaR {
     height: 45px;
+    background-color: rgb(200, 178, 220);
 }
 .informacion {
     display: flex;
@@ -30,8 +37,9 @@
 }
 
 .listo {
-    height: 35px;
-    background-color: blue;
+    height: 45px;
+    border-style: 600px;
+    background-color: rgb(62, 18, 236);
     color: beige;
     cursor: pointer;
 }

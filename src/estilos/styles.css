@@ -4,16 +4,20 @@ body {
 
 .sesion{
     font-size: 30px;
+    width:250px ;
+    position: relative;
+    left: 75px;
 }
 
 .hidden{      
     display: none;
+    
 }
 
 .formulario{
     /* Le di color a bienvenidos */
     font-size: 50px;
-    color:rgb(218, 187, 148);
+    color:rgb(218, 193, 162);
     display: flex;
     flex-direction: column ;
     width: 500px;
