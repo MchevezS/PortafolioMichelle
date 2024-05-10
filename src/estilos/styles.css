@@ -1,5 +1,7 @@
-body {
-    background-color: rgb(5, 5, 5);
+.BODY {
+    background-image:url("src/imagenes/fondo5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sesion{
@@ -31,4 +33,9 @@ body {
 }
 .entrar {
     background-color: rgb(211, 205, 199);
+}
+.BODY{
+    background-image: url("/src/imagenes/232.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
