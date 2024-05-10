@@ -134,8 +134,8 @@ enlacehabilidades.addEventListener("click",()=>{
 let contactame  = document.getElementById("informacioncontacto")
 let Enlacecontacto = document.getElementById("enlacecontacto")
 function CONTACTO() {
-  CONTACTO.classList.toggle("INFContacto")
+  contactame.classList.toggle("INFContacto")                                                 //primmero agregue la variable y luego classlist.toggle y luego el id
 }
-Enlacecontacto.addEventListener("click", ()=>{
+enlacecontacto.addEventListener("click", ()=>{
   CONTACTO()
 })
