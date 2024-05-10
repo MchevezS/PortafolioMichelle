@@ -1,0 +1,18 @@
+.hidden{
+    display: none;
+}
+
+.Enlaces {
+    font-size: 30px;
+    width: 3000px;
+    background-color: blue;
+}
+.INFPROYECTO {
+    display: none;
+}
+.INFHABILIDADES {
+    display: none;
+}
+.INFCONTACTO {
+    display: none;
+}

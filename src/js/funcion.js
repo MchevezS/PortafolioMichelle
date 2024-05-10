@@ -10,8 +10,8 @@ let inputTelefono = document.getElementById("inputTelefono")
 let inputCorreo = document.getElementById("inputCorreo")
 let inputContrasenia = document.getElementById("inputContrasenia")
 let btnRegistrarse = document.getElementById("btnRegistrarse") 
+let listaUsuario = []                                                    //...cree una variable llamada listaUsuario, esto es para solo los usiarios que se registran
 
-let listaUsuario = []                                                     //...cree una variable llamada listaUsuario, esto es para solo los usiarios que se registran
 function mostrarFormulario(){
 contFormulario.classList.remove("hidden")                              //1. Accedemos al contenedor que tiene todos los inputs para manipular la clase, usamos el atributo classlist para realizarlo.
 contFormulario.classList.add("formulario")                            //1. Accedemos al contenedor que tiene todos los inputs para manipular la clase, usamos el atributo classlist para realizarlo.
@@ -23,8 +23,6 @@ contFormulario.classList.add("formulario")                            //1. Acced
      }catch(e){
          console.log(e)
      }
-
-
     let inputNombreLocalStorage                                                     // 2. luego afuera de esta funcion cree esta variable pero le tuve que añadir el "localstorage" para que las cosas se guardaran aqui
     let registrarsenombreLocalStorage                                                              //2.1
     let inputApellidosLocalStorage
@@ -79,7 +77,9 @@ contFormulario.classList.add("formulario")                            //1. Acced
        console.log(correoLocalStorage)
         console.log(claveLocalStorage)
     }                                                                                                                   
-btnEntrar.addEventListener("click",()=>{
+
+try {
+    btnEntrar.addEventListener("click",()=>{
     const inputCorreo = document.getElementById("inputCorreo")
     const inputClave = document.getElementById("inputClave")
     if (inputCorreo.value==correoLocalStorage && inputClave.value==claveLocalStorage) {
@@ -92,11 +92,50 @@ btnEntrar.addEventListener("click",()=>{
     }
 })
 
-
-
-
-
-
-
-
+}catch (error) {
+}   
 // cambiar para que la informacion de la otra persona no le caiga encima a la otra, osea hacer que se vea la informacion de cualquiera pero sin tener que tapar la otra. 'esto lo hago con arreglos'
+  
+// voy a comenzar a trabajar con el portafolio  |
+  //                                            V
+
+
+  let article = document.getElementById("sobremihidden1")                                      // este let lo llame asi porque asi se llama la variable. el getelement lo que hace es llamr al id
+  let enlace1 = document.getElementById("enlace")                                           // este let nombre asi solo porque quise. getelement lo nombre asi porque asi se llama el id
+  function sobremi() {      
+    let experiencias = document.getElementById("informacionproyecto")                                          // lo nombre "sobremi" porque tenia que crearle un nombre y ese nombre solo lo tengo aqui.
+    article.classList.toggle("hidden")                                                   //experiencias.style.display="none"  // el hidden que esta aqui es el class que esta dentro de article
+  }
+
+  enlace.addEventListener("click",()=>{                                                // este enlance es el id que esta <a id="enlace" href="#sobremiid">
+
+    sobremi()                                                                         // este sobremi es el nombre que le di a la  funcion 
+  })
+
+
+  let experiencias = document.getElementById("informacionproyecto")             //aqui le cree una variable llamada experiencias
+  let EnlaceProyecto = document.getElementById("enlaceproyecto")                 // cree la variable EnlaceProyecto
+  function Experenciaproyecto() {                                                  // le di un nombre cualquiera a la funcion
+    experiencias.classList.toggle("INFPROYECTO")                                             // aqui llame a la variable experiencias| el infproyecto es la clase del div "el que esta en el proyecto" 
+  }
+enlaceproyecto.addEventListener("click",()=>{
+    Experenciaproyecto()
+})
+
+let habilidadesblan = document.getElementById("informacionhabilidades")
+let Enlacehabilidadesb = document.getElementById("enlacehabilidades")
+function HABILIDADESBLANDAS() {
+  habilidadesblan.classList.toggle("INFHABILIDADES")
+}
+enlacehabilidades.addEventListener("click",()=>{
+  HABILIDADESBLANDAS()
+})
+
+let contactame  = document.getElementById("informacioncontacto")
+let Enlacecontacto = document.getElementById("enlacecontacto")
+function CONTACTO() {
+  CONTACTO.classList.toggle("INFContacto")
+}
+Enlacecontacto.addEventListener("click", ()=>{
+  CONTACTO()
+})
