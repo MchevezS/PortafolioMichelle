@@ -1,10 +1,12 @@
 .BODY {
-    background-image:url("src/imagenes/fondo5.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image:url("src/imagenes/fondo5.jpg") ; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    overflow: hidden;
 }
 
 .sesion{
+    z-index: 100;
     font-size: 30px;
     width:250px ;
     position: relative;
@@ -13,11 +15,14 @@
 
 .hidden{      
     display: none;
+  
+    z-index: 100;
     
 }
 
 .formulario{
     /* Le di color a bienvenidos */
+    
     font-size: 50px;
     color:rgb(218, 193, 162);
     display: flex;
@@ -34,8 +39,15 @@
 .entrar {
     background-color: rgb(211, 205, 199);
 }
-.BODY{
-    background-image: url("/src/imagenes/232.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.imagenfondo{
+    position: fixed;
+    z-index: -100;
+
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+
+    /* background-image: url("/src/imagenes/232.jpg"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
 }
